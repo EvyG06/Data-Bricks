@@ -1,0 +1,28 @@
+# Bundle del taller Databricks Activity 1 (Ingenieria de Datos, EIA 2026-2)
+bundle:
+  name: taller_databricks
+
+# Los recursos (job y pipeline) se agregan en los ejercicios 3 y 4.
+# include:
+#   - resources/*.yml
+
+sync:
+  exclude:
+    - evidencias/**
+    - scripts/**
+
+variables:
+  catalogo:
+    description: Catalogo de Unity Catalog del workspace
+    default: workspace
+  esquema:
+    description: Esquema donde viven las tablas del taller
+    default: ingenieria_datos_evelyn
+
+targets:
+  dev:
+    default: true
+    # Sin "mode: development" a proposito. Ese modo antepone "[dev usuario]"
+    # al nombre de jobs y pipelines, y el taller exige nombres exactos.
+    workspace:
+      host: https://REEMPLAZAR.cloud.databricks.com
