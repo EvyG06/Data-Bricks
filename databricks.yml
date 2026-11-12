@@ -25,4 +25,4 @@ targets:
     # Sin "mode: development" a proposito. Ese modo antepone "[dev usuario]"
     # al nombre de jobs y pipelines, y el taller exige nombres exactos.
     workspace:
-      host: https://REEMPLAZAR.cloud.databricks.com
+      host: https://dbc-906e1f12-b6fc.cloud.databricks.com
