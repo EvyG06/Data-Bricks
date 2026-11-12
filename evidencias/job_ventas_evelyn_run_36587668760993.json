@@ -1,0 +1,110 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "eve010806@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1794457647144,
+  "execution_duration": 0,
+  "job_id": 439043127024339,
+  "job_run_id": 36587668760993,
+  "number_in_job": 36587668760993,
+  "original_attempt_run_id": 36587668760993,
+  "run_duration": 43828,
+  "run_id": 36587668760993,
+  "run_name": "job_ventas_evelyn",
+  "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/36587668760993",
+  "run_type": "JOB_RUN",
+  "setup_duration": 0,
+  "start_time": 1794457603316,
+  "state": {
+    "life_cycle_state": "TERMINATED",
+    "result_state": "SUCCESS",
+    "state_message": "",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "SUCCESS",
+      "message": "",
+      "type": "SUCCESS"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "depends_on": [
+        {
+          "task_key": "cargar_ventas"
+        }
+      ],
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794457646702,
+      "execution_duration": 18000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "workspace",
+          "esquema": "ingenieria_datos_evelyn"
+        },
+        "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/02_transformar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 524620948541710,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/524620948541710",
+      "setup_duration": 1000,
+      "start_time": 1794457627263,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SUCCESS",
+          "message": "",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "transformar_ventas"
+    },
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794457626880,
+      "execution_duration": 21000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "workspace",
+          "esquema": "ingenieria_datos_evelyn"
+        },
+        "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 351641939729216,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/351641939729216",
+      "setup_duration": 2000,
+      "start_time": 1794457603340,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SUCCESS",
+          "message": "",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "cargar_ventas"
+    }
+  ],
+  "trigger": "ONE_TIME"
+}

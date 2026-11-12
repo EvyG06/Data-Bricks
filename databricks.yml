@@ -3,8 +3,8 @@ bundle:
   name: taller_databricks
 
 # Los recursos (job y pipeline) se agregan en los ejercicios 3 y 4.
-# include:
-#   - resources/*.yml
+include:
+  - resources/*.yml
 
 sync:
   exclude:
