@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "cleanup_duration": 0,
+    "creator_user_name": "eve010806@gmail.com",
+    "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+    "end_time": 1794457041939,
+    "execution_duration": 20000,
+    "job_id": 567270417948323,
+    "job_run_id": 241100365197082,
+    "number_in_job": 38838354554622,
+    "run_id": 38838354554622,
+    "run_name": "nb",
+    "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/567270417948323/run/38838354554622",
+    "run_type": "SUBMIT_RUN",
+    "setup_duration": 3000,
+    "start_time": 1794457017913,
+    "state": {
+      "life_cycle_state": "TERMINATED",
+      "result_state": "SUCCESS",
+      "state_message": "",
+      "user_cancelled_or_timedout": false
+    },
+    "status": {
+      "state": "TERMINATED",
+      "termination_details": {
+        "code": "SUCCESS",
+        "message": "",
+        "type": "SUCCESS"
+      }
+    },
+    "tasks": [
+      {
+        "attempt_number": 0,
+        "cleanup_duration": 0,
+        "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+        "end_time": 1794457041939,
+        "execution_duration": 20000,
+        "notebook_task": {
+          "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/01b_consultar_ventas",
+          "source": "WORKSPACE"
+        },
+        "run_id": 38838354554622,
+        "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/567270417948323/run/38838354554622",
+        "setup_duration": 3000,
+        "start_time": 1794457017913,
+        "state": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "status": {
+          "state": "TERMINATED",
+          "termination_details": {
+            "code": "SUCCESS",
+            "message": "",
+            "type": "SUCCESS"
+          }
+        },
+        "task_key": "nb"
+      }
+    ]
+  },
+  "notebook_output": {
+    "result": "{\"total_registros\": 17, \"categoria\": \"Tecnologia\", \"filas_categoria\": 7, \"ventas_categoria\": [{\"id_venta\": 1, \"fecha\": \"2026-11-01\", \"producto\": \"Mouse inalambrico\", \"categoria\": \"Tecnologia\", \"cantidad\": 2, \"precio_unitario\": \"45000.00\"}, {\"id_venta\": 2, \"fecha\": \"2026-11-01\", \"producto\": \"Teclado mecanico\", \"categoria\": \"Tecnologia\", \"cantidad\": 1, \"precio_unitario\": \"180000.00\"}, {\"id_venta\": 5, \"fecha\": \"2026-11-03\", \"producto\": \"Audifonos bluetooth\", \"categoria\": \"Tecnologia\", \"cantidad\": 1, \"precio_unitario\": \"150000.00\"}, {\"id_venta\": 5, \"fecha\": \"2026-11-03\", \"producto\": \"Audifonos bluetooth\", \"categoria\": \"Tecnologia\", \"cantidad\": 1, \"precio_unitario\": \"150000.00\"}, {\"id_venta\": 9, \"fecha\": \"2026-11-05\", \"producto\": \"Monitor 24 pulgadas\", \"categoria\": \"Tecnologia\", \"cantidad\": 1, \"precio_unitario\": \"720000.00\"}, {\"id_venta\": 11, \"fecha\": \"2026-11-06\", \"producto\": \"Memoria USB 64GB\", \"categoria\": \"Tecnologia\", \"cantidad\": 3, \"precio_unitario\": \"35000.00\"}, {\"id_venta\": 15, \"fecha\": \"2026-11-08\", \"producto\": \"Cable HDMI\", \"categoria\": \"Tecnologia\", \"cantidad\": -1, \"precio_unitario\": \"25000.00\"}]}",
+    "truncated": false
+  }
+}
