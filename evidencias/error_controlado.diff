@@ -1,0 +1,13 @@
+diff --git a/src/01_cargar_ventas.py b/src/01_cargar_ventas.py
+index e295f44..cba86da 100644
+--- a/src/01_cargar_ventas.py
++++ b/src/01_cargar_ventas.py
+@@ -59,7 +59,7 @@ display(df_ventas)
+ 
+ # COMMAND ----------
+ 
+-(df_ventas.write
++(df_ventas.select("id_venta", "descuento").write
+     .format("delta")
+     .mode("overwrite")
+     .option("overwriteSchema", "true")
