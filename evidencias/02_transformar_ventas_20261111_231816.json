@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "cleanup_duration": 0,
+    "creator_user_name": "eve010806@gmail.com",
+    "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+    "end_time": 1794457090401,
+    "execution_duration": 36000,
+    "job_id": 655498286297952,
+    "job_run_id": 693951497871464,
+    "number_in_job": 431300686614650,
+    "run_id": 431300686614650,
+    "run_name": "nb",
+    "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/655498286297952/run/431300686614650",
+    "run_type": "SUBMIT_RUN",
+    "setup_duration": 2000,
+    "start_time": 1794457051388,
+    "state": {
+      "life_cycle_state": "TERMINATED",
+      "result_state": "SUCCESS",
+      "state_message": "",
+      "user_cancelled_or_timedout": false
+    },
+    "status": {
+      "state": "TERMINATED",
+      "termination_details": {
+        "code": "SUCCESS",
+        "message": "",
+        "type": "SUCCESS"
+      }
+    },
+    "tasks": [
+      {
+        "attempt_number": 0,
+        "cleanup_duration": 0,
+        "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+        "end_time": 1794457090401,
+        "execution_duration": 36000,
+        "notebook_task": {
+          "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/02_transformar_ventas",
+          "source": "WORKSPACE"
+        },
+        "run_id": 431300686614650,
+        "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/655498286297952/run/431300686614650",
+        "setup_duration": 2000,
+        "start_time": 1794457051388,
+        "state": {
+          "life_cycle_state": "TERMINATED",
+          "result_state": "SUCCESS",
+          "state_message": "",
+          "user_cancelled_or_timedout": false
+        },
+        "status": {
+          "state": "TERMINATED",
+          "termination_details": {
+            "code": "SUCCESS",
+            "message": "",
+            "type": "SUCCESS"
+          }
+        },
+        "task_key": "nb"
+      }
+    ]
+  },
+  "notebook_output": {
+    "result": "{\"registros_bronze\": 17, \"despues_de_quitar_duplicados\": 16, \"rechazadas_por_calidad\": [{\"id_venta\": 14, \"motivo\": \"sin producto\"}, {\"id_venta\": 15, \"motivo\": \"cantidad \u003c= 0\"}, {\"id_venta\": 16, \"motivo\": \"precio \u003c= 0\"}], \"registros_silver\": 13, \"ventas_por_categoria\": [{\"categoria\": \"Tecnologia\", \"num_ventas\": 5, \"valor_total\": \"1245000.00\"}, {\"categoria\": \"Hogar\", \"num_ventas\": 4, \"valor_total\": \"876000.00\"}, {\"categoria\": \"Papeleria\", \"num_ventas\": 4, \"valor_total\": \"186500.00\"}], \"historial_silver\": [{\"version\": 2, \"timestamp\": \"2026-11-12 04:17:53\", \"operation\": \"CREATE OR REPLACE TABLE AS SELECT\", \"filas_escritas\": \"13\"}, {\"version\": 1, \"timestamp\": \"2026-11-12 04:11:45\", \"operation\": \"CREATE OR REPLACE TABLE AS SELECT\", \"filas_escritas\": \"13\"}, {\"version\": 0, \"timestamp\": \"2026-11-12 04:11:01\", \"operation\": \"CREATE OR REPLACE TABLE AS SELECT\", \"filas_escritas\": \"13\"}]}",
+    "truncated": false
+  }
+}
