@@ -1,0 +1,4 @@
+categoria   num_ventas  valor_total
+Tecnologia  6           1485000.00
+Hogar       4           876000.00
+Papeleria   4           186500.00
