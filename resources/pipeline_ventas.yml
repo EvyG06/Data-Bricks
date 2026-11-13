@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_ventas:
+      name: pipeline_ventas_evelyn
+      catalog: ${var.catalogo}
+      schema: ${var.esquema}
+      serverless: true
+      root_path: ../src/pipeline_ventas
+      libraries:
+        - glob:
+            include: ../src/pipeline_ventas/transformations/**
+      configuration:
+        tienda.catalogo: ${var.catalogo}
+        tienda.esquema: ${var.esquema}
