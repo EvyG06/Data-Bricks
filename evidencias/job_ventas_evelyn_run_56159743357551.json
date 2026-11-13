@@ -1,0 +1,145 @@
+{
+  "cleanup_duration": 0,
+  "creator_user_name": "eve010806@gmail.com",
+  "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+  "end_time": 1794597322572,
+  "execution_duration": 0,
+  "job_id": 439043127024339,
+  "job_run_id": 56159743357551,
+  "number_in_job": 56159743357551,
+  "original_attempt_run_id": 56159743357551,
+  "run_duration": 36538,
+  "run_id": 56159743357551,
+  "run_name": "job_ventas_evelyn",
+  "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/56159743357551",
+  "run_type": "JOB_RUN",
+  "setup_duration": 0,
+  "start_time": 1794597286034,
+  "state": {
+    "life_cycle_state": "INTERNAL_ERROR",
+    "result_state": "FAILED",
+    "state_message": "Task cargar_ventas failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.",
+    "user_cancelled_or_timedout": false
+  },
+  "status": {
+    "state": "TERMINATED",
+    "termination_details": {
+      "code": "RUN_EXECUTION_ERROR",
+      "message": "Task cargar_ventas failed with message: Workload failed, see run output for details. This caused all downstream tasks to get skipped.",
+      "type": "CLIENT_ERROR"
+    }
+  },
+  "tasks": [
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "depends_on": [
+        {
+          "task_key": "cargar_ventas"
+        }
+      ],
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794597322437,
+      "execution_duration": 0,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "workspace",
+          "esquema": "ingenieria_datos_evelyn"
+        },
+        "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/02_transformar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 243291151049927,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/243291151049927",
+      "setup_duration": 0,
+      "start_time": 1794597322437,
+      "state": {
+        "life_cycle_state": "SKIPPED",
+        "result_state": "UPSTREAM_FAILED",
+        "state_message": "An upstream task failed.",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "SKIPPED",
+          "message": "An upstream task failed.",
+          "type": "SUCCESS"
+        }
+      },
+      "task_key": "transformar_ventas"
+    },
+    {
+      "attempt_number": 0,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794597305017,
+      "execution_duration": 15000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "workspace",
+          "esquema": "ingenieria_datos_evelyn"
+        },
+        "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 243631094448717,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/243631094448717",
+      "setup_duration": 3000,
+      "start_time": 1794597286066,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "cargar_ventas"
+    },
+    {
+      "attempt_number": 1,
+      "cleanup_duration": 0,
+      "effective_performance_target": "PERFORMANCE_OPTIMIZED",
+      "end_time": 1794597322034,
+      "execution_duration": 8000,
+      "notebook_task": {
+        "base_parameters": {
+          "catalogo": "workspace",
+          "esquema": "ingenieria_datos_evelyn"
+        },
+        "notebook_path": "/Workspace/Users/eve010806@gmail.com/.bundle/taller_databricks/dev/files/src/01_cargar_ventas",
+        "source": "WORKSPACE"
+      },
+      "run_id": 717358328614098,
+      "run_if": "ALL_SUCCESS",
+      "run_page_url": "https://dbc-906e1f12-b6fc.cloud.databricks.com/?o=7474645966277440#job/439043127024339/run/717358328614098",
+      "setup_duration": 2000,
+      "start_time": 1794597311739,
+      "state": {
+        "life_cycle_state": "TERMINATED",
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "user_cancelled_or_timedout": false
+      },
+      "status": {
+        "state": "TERMINATED",
+        "termination_details": {
+          "code": "RUN_EXECUTION_ERROR",
+          "message": "Workload failed, see run output for details",
+          "type": "CLIENT_ERROR"
+        }
+      },
+      "task_key": "cargar_ventas"
+    }
+  ],
+  "trigger": "ONE_TIME"
+}
