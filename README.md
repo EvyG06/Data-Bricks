@@ -302,7 +302,7 @@ resources:
 - `max_concurrent_runs: 1` evita que dos ejecuciones simultáneas escriban las mismas tablas al mismo tiempo.
 - Las tareas no definen clúster, así que corren en cómputo serverless.
 
-![Dependencias entre tareas del job](capturas/ej3_tareas_dependencias.png)
+La dependencia se ve en las capturas de la sección siguiente, en la vista *Timeline* de cada ejecución. Una flecha sale del final de `cargar_ventas` hacia `transformar_ventas`, y en la ejecución exitosa la segunda tarea solo arranca cuando termina la primera. En la fallida, la flecha llega a `transformar_ventas` marcada como *Skipped*.
 
 ### Ejecuciones
 
